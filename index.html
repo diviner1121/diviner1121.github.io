@@ -7,12 +7,16 @@
 			function color(str){
 				document.body.style.backgroundColor=str;
 			}
+			function chgcolor(dz){
+				var chgdzColor=document.getElementById("chgdzColor");
+				document.body.style.backgroundColor=chgdzColor.value;
+			}
 		</script>
 	</head>
 	<body>
 		<input type="button" value="设为红色" onclick="color('red')">
 		<input type="button" value="设为黄色" onclick="color('yellow')">
 		<input type="button" value="设为蓝色" onclick="color('blue')">
-		<input type="button" value="设为自定义色" onclick="color('#00ff00')">
+		<input type="color" id="chgdzColor" value="#ff0000" onchange="chgcolor()">
 	</body>
 </html>
