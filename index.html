@@ -1,77 +1,18 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<style type="text/css">
-			p{
-				display: block;
+		<meta charset="utf-8" />
+		<title>改变网页背景颜色</title>
+		<script>
+			function color(str){
+				document.body.style.backgroundColor=str;
 			}
-			.t{
-				
-				width: 0px;
-				height:0px;
-				margin: 12px;
-			    border-bottom:102px solid #FF00FF ;
-			      border-top:102px solid  blue;
-			    border-right:102px solid #FF00FF ;
-			    border-left:102px solid blue ;
-			    float: left;
-			
-			}
-			.k{
-				
-						width: 0px;
-				height:0px;
-				margin: 12px;
-			    border-bottom:102px solid #FF00FF ;
-			      border-top:102px solid  #FF00FF;
-			    border-right:102px solid blue ;
-			    border-left:102px solid blue ;
-			    float: left;
-			}
-			.a{
-				
-			    width: 0px;
-				height:0px;
-				margin: 6px;
-			    border-bottom:102px solid transparent ;
-			      border-top:102px solid  transparent;
-			    border-right:102px solid blue ;
-			    float: left;
-			}
-			.b{
-			
-				   width: 0px;
-				height:0px;
-				margin: 6px;
-			    border-bottom:102px solid transparent ;
-			      border-top:102px solid  transparent;
-			    border-left:102px solid blue ;
-			    float: left;
-			}
-		</style>
+		</script>
 	</head>
 	<body>
-		<div>
-		<div class="t" >
-		
-		</div>
-		
-		<div class="k">
-			
-		</div>
-		<div>
-		<div class="a">
-			
-		</div>
-		<div class="b">
-			
-		</div>
-		
-		</div>
-		
-		</div>
+		<input type="button" value="设为红色" onclick="color('red')">
+		<input type="button" value="设为黄色" onclick="color('yellow')">
+		<input type="button" value="设为蓝色" onclick="color('blue')">
+		<input type="button" value="设为自定义色" onclick="color('#00ff00')">
 	</body>
 </html>
